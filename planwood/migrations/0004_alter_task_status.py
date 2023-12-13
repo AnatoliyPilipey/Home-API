@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('wood', '0003_task_deadline'),
+        ('planwood', '0003_task_deadline'),
     ]
 
     operations = [

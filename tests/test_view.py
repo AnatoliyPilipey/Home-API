@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from wood.models import Task, Tags
+from planwood.models import Task, Tags
 
 TASK_URL = reverse("planwood:task-list")
 TAGS_URL = reverse("planwood:tags-list")

@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('date_task_created', models.DateTimeField(auto_now_add=True)),
                 ('deadline', models.DateTimeField(null=True)),
                 ('status', models.BooleanField(null=True)),
-                ('tags', models.ManyToManyField(related_name='tag', to='wood.tags')),
+                ('tags', models.ManyToManyField(related_name='tag', to='planwood.tags')),
             ],
         ),
     ]
