@@ -13,7 +13,7 @@ class TaskListView(generic.ListView):
 class TaskCreateView(generic.CreateView):
     model = Task
     form_class = TaskForm
-    success_url = reverse_lazy("wood:task-list")
+    success_url = reverse_lazy("planwood:task-list")
 
 
 class TaskStatusChangView(generic.ListView):
@@ -35,13 +35,13 @@ class TaskStatusChangView(generic.ListView):
 class TaskUpdateView(generic.UpdateView):
     model = Task
     form_class = TaskForm
-    success_url = reverse_lazy("wood:task-list")
+    success_url = reverse_lazy("planwood:task-list")
 
 
 class TaskDeleteView(generic.DeleteView):
     model = Task
     fields = "__all__"
-    success_url = reverse_lazy("wood:task-list")
+    success_url = reverse_lazy("planwood:task-list")
 
 
 class TagsListView(generic.ListView):
@@ -51,16 +51,16 @@ class TagsListView(generic.ListView):
 class TagsCreateView(generic.CreateView):
     model = Tags
     fields = "__all__"
-    success_url = reverse_lazy("wood:tags-list")
+    success_url = reverse_lazy("planwood:tags-list")
 
 
 class TagsUpdateView(generic.UpdateView):
     model = Tags
     fields = "__all__"
-    success_url = reverse_lazy("wood:tags-list")
+    success_url = reverse_lazy("planwood:tags-list")
 
 
 class TagsDeleteView(generic.DeleteView):
     model = Tags
     fields = "__all__"
-    success_url = reverse_lazy("wood:tags-list")
+    success_url = reverse_lazy("planwood:tags-list")

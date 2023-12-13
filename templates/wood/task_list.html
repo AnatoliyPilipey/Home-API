@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>TODO list
-       <a href="{% url 'wood:task-create' %}" class="btn btn-primary link-to-page">
+       <a href="{% url 'planwood:task-create' %}" class="btn btn-primary link-to-page">
         Create
       </a>
     </h1>
@@ -13,12 +13,12 @@
           {{ task.content }}
           {% if task.status is True %}
             <span style="color: green;">Done</span>
-            <a href="{% url 'wood:task-status' pk=task.id  new=0 %}" class="btn btn-secondary link-to-page">
+            <a href="{% url 'planwood:task-status' pk=task.id  new=0 %}" class="btn btn-secondary link-to-page">
               Undo
             </a>
           {% else %}
             <span style="color: red;">Note done</span>
-            <a href="{% url 'wood:task-status' pk=task.id  new=1 %}" class="btn btn btn-success link-to-page">
+            <a href="{% url 'planwood:task-status' pk=task.id  new=1 %}" class="btn btn btn-success link-to-page">
               Complete
             </a>
           {% endif %}
@@ -37,10 +37,10 @@
           {% for tag in task.tags.all %}
               {{ tag.name }}
           {% endfor %}
-          <a href="{% url 'wood:task-update' pk=task.id %}" class="link-underline-light">
+          <a href="{% url 'planwood:task-update' pk=task.id %}" class="link-underline-light">
             Update
           </a>
-          <a href="{% url 'wood:task-delete' pk=task.id %}" class="link-underline-light">
+          <a href="{% url 'planwood:task-delete' pk=task.id %}" class="link-underline-light">
             Delete
           </a>
         </p>

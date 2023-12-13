@@ -10,7 +10,7 @@ There's a department called Wood at the Alex Wood plant. It is assigned tasks wi
     ```
 3. Go to the folder with the project.  
     ```shell 
-    cd Home API
+    cd name_folder
     ```
 4. Creating a virtual environment.  
     ```shell 

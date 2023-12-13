@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>Tags
-      <a href="{% url 'wood:tags-create' %}" class="btn btn-primary link-to-page">
+      <a href="{% url 'planwood:tags-create' %}" class="btn btn-primary link-to-page">
         Create
       </a>
     </h1>
@@ -18,13 +18,13 @@
       <tr>
         <td>{{ tag.name }}</td>
         <td>
-          <a href="{% url 'wood:tags-update' pk=tag.id %}" class="link-underline-light">
+          <a href="{% url 'planwood:tags-update' pk=tag.id %}" class="link-underline-light">
             Update
           </a>
 
         </td>
         <td>
-          <a href="{% url 'wood:tags-delete' pk=tag.id %}" class="link-underline-light">
+          <a href="{% url 'planwood:tags-delete' pk=tag.id %}" class="link-underline-light">
             Delete
           </a>
         </td>
@@ -35,6 +35,6 @@
     </table>
     {% else %}
 <!--        <td><a href="{% url 'wood:tags-delete' pk=tags.pk %}">Delete</a></td>-->
-      <p>There are no drivers in the service.</p>
+      <p>There are no tags.</p>
     {% endif %}
 {% endblock %}

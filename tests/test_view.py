@@ -3,9 +3,9 @@ from django.urls import reverse
 
 from wood.models import Task, Tags
 
-TASK_URL = reverse("wood:task-list")
-TAGS_URL = reverse("wood:tags-list")
-STATUS_URL = reverse("wood:task-status", args=[1, 1])
+TASK_URL = reverse("planwood:task-list")
+TAGS_URL = reverse("planwood:tags-list")
+STATUS_URL = reverse("planwood:task-status", args=[1, 1])
 
 
 class PublicTests(TestCase):
