@@ -51,4 +51,4 @@ urlpatterns = [
     ),
 ]
 
-app_name = "planwood"
+app_name = "tasks"

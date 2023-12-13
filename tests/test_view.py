@@ -1,11 +1,11 @@
 from django.test import TestCase
 from django.urls import reverse
 
-from planwood.models import Task, Tags
+from tasks.models import Task, Tags
 
-TASK_URL = reverse("planwood:task-list")
-TAGS_URL = reverse("planwood:tags-list")
-STATUS_URL = reverse("planwood:task-status", args=[1, 1])
+TASK_URL = reverse("tasks:task-list")
+TAGS_URL = reverse("tasks:tags-list")
+STATUS_URL = reverse("tasks:task-status", args=[1, 1])
 
 
 class PublicTests(TestCase):
